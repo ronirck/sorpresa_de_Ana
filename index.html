@@ -104,16 +104,6 @@
           animation: shootingStarTail 3s linear infinite;
         }
 
-        @media (max-width: 600px) {
-  .flowers {
-    transform: scale(0.7) translateY(-15vmin);
-  }
-  .ramo {
-    bottom: -5vmin; /* subir ramo desde -22vmin a -5vmin */
-  }
-}
-
-
         .shooting-star:nth-child(1) {
           top: 5%;
           left: -10%;
@@ -201,7 +191,7 @@
 
         .flowers {
           position: relative;
-          transform: scale(0.7) translateY(-15vmin);
+          transform: scale(0.7);
           z-index: 2;
         }
 
@@ -883,8 +873,8 @@
         }
 
         .ramo {
-           bottom: -5vmin; /* subir ramo desde -22vmin a -5vmin */
           position: absolute;
+          bottom: -22vmin;
           left: 50%;
           transform: translateX(-50%);
           z-index: 0;
@@ -900,6 +890,16 @@
   height: auto;
   display: block;
   filter: hue-rotate(270deg) saturate(3) brightness(0.9) contrast(1.2);
+}
+
+      
+        @media (max-width: 600px) {
+  .flowers {
+    transform: scale(0.7) translateY(-15vmin);
+  }
+  .ramo {
+    bottom: -5vmin; /* subir ramo desde -22vmin a -5vmin */
+  }
 }
 
         .montes {

@@ -201,7 +201,7 @@
 
         .flowers {
           position: relative;
-          transform: scale(0.7);
+          transform: scale(0.7) translateY(-15vmin);
           z-index: 2;
         }
 
@@ -883,8 +883,8 @@
         }
 
         .ramo {
+           bottom: -5vmin; /* subir ramo desde -22vmin a -5vmin */
           position: absolute;
-          bottom: -22vmin;
           left: 50%;
           transform: translateX(-50%);
           z-index: 0;
@@ -899,7 +899,7 @@
   width: 45vmin;
   height: auto;
   display: block;
-  filter: hue-rotate(270deg) saturate(1.5);
+  filter: hue-rotate(270deg) saturate(3) brightness(0.9) contrast(1.2);
 }
 
         .montes {
